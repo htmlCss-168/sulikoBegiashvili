@@ -1,0 +1,15 @@
+.mainDiv{
+    display: block;
+    border: 3px solid rgb(202, 202, 202);
+    padding: 50px;
+    border-radius: 3%;
+}
+
+.mainDiv div{
+   padding: 5px;
+}
+
+.containerForMainDiv{
+    display: flex;
+    justify-content: center;
+}

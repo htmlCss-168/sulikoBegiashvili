@@ -1,13 +1,15 @@
 .logIn{
-    display: block;
-    border: 3px solid black;
-    margin-left: 40px; 
+    border: 3px solid rgb(238, 238, 238);
+    width: 200px;
+    padding: 30px;
+    border-radius: 5%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(140, 189, 245) 21%);
 }
 
-.logIn div{
-    padding: 10px;
+.containerForLogInDiv{
     display: flex;
     justify-content: center;
+    
 }
 
 .logIn div a {
@@ -15,9 +17,41 @@
     font-size: 12px;
 }
 
+#logInItemInside{
+    padding: 5px;
+    
+}
+
+#logInItemInside:focus{
+    color: rgb(161, 6, 6);
+    background-color: rgb(72, 150, 239);
+}
+
+
+#logInItem{
+    padding: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+}
+
 #btn1{
     width: 170px;
-    background-color:  rgb(26, 75, 220);
+    background-color:   rgb(26, 75, 220);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+#btn1:hover{
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+#btn1:active{
+    background-color: rgb(36, 230, 36);
+    color: white;  
 }
 
 #btn2{
@@ -25,19 +59,40 @@
     font-size: 10px;
     background-color: rgb(36, 230, 36);
     color: white;
+    padding: 5px;
+    font-weight: bold;
 
 }
 
+#btn2:hover{
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+    background-color:white;
+    color: rgb(36, 230, 36);
+    
+}
+
+
+#btn2:active{
+    background-color:rgb(245, 243, 102);
+    color: rgb(26, 75, 220);    
+}
+
 .fullPage{
-    display:flex;
+    display:block;
+    margin-top: 200px;
+    
+}
+
+.facebookSloganContainer{
+    display: flex;
     justify-content: center;
-    margin-top: 300px;
 }
 
 .facebookSlogan{
     width: 300px;
     text-align: center;
-    margin-right: 200px;
 }
 
 .facebookSlogan h1{
@@ -50,4 +105,15 @@
     background-color: rgb(249, 250, 249);
     color: rgb(26, 75, 220);
     border: 3px solid rgb(26, 75, 220);
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.links a{
+    padding: 2px;
+    text-decoration: none;
 }
