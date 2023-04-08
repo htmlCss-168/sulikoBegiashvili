@@ -1,12 +1,31 @@
 .logIn{
     display: block;
     border: 3px solid black;
-    margin-left: +10px ;
-    
+    margin-left: 40px; 
 }
 
 .logIn div{
     padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logIn div a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#btn1{
+    width: 170px;
+    background-color:  rgb(26, 75, 220);
+}
+
+#btn2{
+    width: 120px;
+    font-size: 10px;
+    background-color: rgb(36, 230, 36);
+    color: white;
+
 }
 
 .fullPage{
@@ -18,6 +37,7 @@
 .facebookSlogan{
     width: 300px;
     text-align: center;
+    margin-right: 200px;
 }
 
 .facebookSlogan h1{
