@@ -1,0 +1,33 @@
+.logIn{
+    display: block;
+    border: 3px solid black;
+    margin-left: +10px ;
+    
+}
+
+.logIn div{
+    padding: 10px;
+}
+
+.fullPage{
+    display:flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.facebookSlogan{
+    width: 300px;
+    text-align: center;
+}
+
+.facebookSlogan h1{
+    background-color:  rgb(26, 75, 220);
+    color: rgb(249, 250, 249);
+    text-align: center;
+}
+
+.facebookSlogan h1:hover{
+    background-color: rgb(249, 250, 249);
+    color: rgb(26, 75, 220);
+    border: 3px solid rgb(26, 75, 220);
+}
