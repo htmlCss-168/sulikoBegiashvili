@@ -1,0 +1,836 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background: rgb(74, 135, 234); 
+    /* background-image: url(/photos/background\ sky.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+   /* background: linear-gradient(90deg, rgba(119,160,224,1) 23%, rgba(211,221,83,1) 100%);*/
+} 
+
+.active{
+    color: rgb(0, 34, 253);
+    background-color: rgb(205, 50, 156);
+    border-radius: 15px;
+    padding: 8px;
+}
+
+header nav{
+    width: 70%;
+    margin: 20px auto;
+        
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(184, 206, 85 );
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background: rgb(228,20,20); */
+/*background: linear-gradient(90deg, rgba(228,20,20,1) 0%, rgba(186,184,8,1) 17%, rgba(210,221,28,1) 41%, rgba(34,215,125,1) 61%, rgba(28,63,158,1) 93%);*/
+}
+
+header nav li{
+    padding: 15px;
+}
+
+header nav a{
+    color: rgb(32, 12, 12);
+    
+}
+
+header nav a:hover{
+    color: rgb(38, 67, 250);
+    background-color: rgb(205, 50, 50);
+    border-radius: 15px;
+    padding: 8px;
+}
+
+/* .slider{
+    display: flex;
+    gap: 100px;
+}
+
+.slider div{
+    width: 300px;
+    height: 300px;        
+}  */
+
+/* .slider div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+} */
+
+
+
+/* .slide-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    
+}
+    
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin:80px auto;
+}
+     
+     
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+     
+         
+.slide-wrapper {
+    width: calc(728px * 5);
+    animation: slide-wrapper 10s ease infinite;
+}
+
+@keyframes slide-wrapper {
+
+
+    0% {
+        margin-left: 0;
+    }
+        
+    20% {
+        margin-left: calc(-728px * 1);
+    }
+        
+    40% {
+        margin-left: calc(-728px * 2);
+    }
+        
+    60% {
+        margin-left: calc(-728px * 3);
+    }
+        
+    80% {
+        margin-left: calc(-728px * 4);
+    }
+        
+    100% {
+        margin-left: calc(0);
+    }
+     
+     } */
+
+     .kitxva{
+       margin: 50px auto;
+        /* width: 1800px; */
+        /* width: 950px; */
+        width: 70%;
+        /* background-color: yellowgreen; */
+        font-family: angkest;
+        font-weight: bold;
+    }
+    .mostquestions{
+        /* margin-top: 50px; */
+        /* display: flex; */
+        justify-content: space-between;
+        -webkit-line-clamp: 3;
+        /* gap: 100px; */
+        /* overflow: hidden; */
+        row-gap: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    /*es responsivze shecvale*/
+    .questions{
+        /* width: 548px; */
+        margin: 0 auto;
+        width: 300px;
+        height: 225px; 
+        /* background-color: transparent; es rames aketebs ? */
+    }
+
+    
+      
+    .questiononeanswer{
+      background-color: #0dbe36;
+      padding: 10px;
+      border-radius: 15%;  
+    } 
+    .firstflipcardinner {
+        position: relative; /*esec ras aketebs ver mivxvdi*/
+        width: 100%;
+        /* height: 100%; */
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /*esec ver mivxvdi*/
+        background-color: #DEA7B6;
+    }
+    .questions:hover .firstflipcardinner {
+      transform: rotateY(-180deg);
+      cursor: pointer;
+    }
+      
+    .firstflipcardfront, .firstflipcardback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /*esec ver mivxvdi*/
+        backface-visibility: hidden;
+        background-color: rgb(12, 173, 71);
+    }
+      
+    .firstflipcardfront {
+        background-color: #0dbe36;
+        color: black;
+        
+    }
+    
+    .firstflipcardfront img {
+        width: 100%;
+        height: 200px;
+        border: 10px solid gold;
+        border-radius: 15%;
+    }
+
+
+
+    .firstflipcardback {
+        background-color: #DEA7B6;
+        transform: rotateY(-180deg);
+        
+    }
+     
+@font-face {
+    font-family: military;
+    src: url(/fonts/MilitaryAgent-51Mea.ttf);
+}     
+
+@font-face {
+    font-family: angkest;
+    src: url(/fonts/Angkest-vmxAZ.ttf);
+}
+
+.sectionDiv article{
+    margin: 20px auto;
+    text-align: center;
+    /*font-family: military;*/
+    font-family: angkest;
+}
+
+.sectionDiv section{
+    background-color: rgb(184, 206, 85);
+    width: 500px;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 15%;
+    font-size: 20px;
+    color: rgb(6, 15, 148);
+}
+
+.sectionDiv section p{
+    color: rgb(6, 7, 9);
+    font-weight: bolder;
+}
+
+.sectionDiv section #title{
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.sectionDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;    
+}
+
+#upcomingTours{
+    text-align: center;
+    /* margin-top: 100px; */
+    font-size: 30px;
+    animation-name: upcomingTours;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 900px;
+    color: rgb(10, 82, 137);
+    
+}
+
+.upcomingToursSection{
+    background-color: rgb(184, 206, 85);
+    text-shadow: rgb(170, 7, 7) 2px -1px;
+    width: 70%;
+    height: 100px;
+    overflow-x: hidden;
+    border-radius: 90px;
+    margin:50px auto;
+    font-family: angkest;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes upcomingTours{
+    0%{margin-left: 0px;}
+    
+    10%{margin-left: -10%;}
+    
+    20%{margin-left: -30%;}
+    
+    30%{margin-left: -50%;}
+    
+    40%{margin-left: -70%;}
+    
+    50%{margin-left: -110%;}
+    
+    60%{margin-left: -70%;}
+    
+    70%{margin-left: -50%;}
+    
+    80%{margin-left: -30%;}
+    
+    90%{margin-left: -10%;}
+    
+    100%{margin-left: 0%;}
+}
+
+#aboutArticle{
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    background-color:yellowgreen;
+    border-radius: 20%;
+    padding: 20px;
+    font-family: angkest;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.aboutSectionDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+
+/* Locationebi istileba akedan*/
+
+.slide-wrapperLocations img{
+    width: 100%;
+    height: 100%;
+}
+
+.slideLocations {
+    /* height: 30%; */
+    width: 30%;
+    border-radius: 15%;
+    border: 3px solid gold;
+    overflow: hidden;
+    transition: 1s ease;
+    
+}
+
+.slide-wrapperLocations{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.slideLocations:hover{
+    transform: scale(1.1);
+    
+}
+
+h1{
+    text-align: center;
+    color: slateblue;
+    font-size: 30px;
+    text-shadow:rgb(21, 20, 20) 2px 2px;
+}
+
+.sectionContainer{
+    border-radius: 15%;
+    left: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+article #pTag{
+    width: 400px;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 15%;
+    padding: 20px;
+}
+
+.tableContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+table{
+    text-align: center;
+}
+
+table th{
+    color: rgb(250, 1, 1);
+    background-color: aqua;
+    font-family:fantasy;
+    padding: 3px;
+    font-size: 20px;
+}
+
+table td{
+    color: rgb(5, 5, 5);
+    background-color: cadetblue;
+    font-weight: bolder;
+}
+
+table tr :hover{
+    background-color: yellow;
+}
+
+.contactArticle{
+    text-align: center;
+    background-color: yellowgreen;
+    width: 65%;
+    margin:200px auto;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contactArticle li{
+    margin-top: 15px;
+    padding: 2px;
+    
+}
+
+.contactArticle p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(221, 192, 28);
+    margin-top: 100px;
+    /* padding-top: 100px; */
+    
+}
+
+.first{
+    
+    align-items: center;
+    /* border-bottom: 2px solid gray; */
+    margin: 0 auto;
+    height: 60px;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+
+.links{
+    display: flex;
+    gap: 5px;
+    /* margin-left: 90%; */
+}
+
+.links div{
+    width: 20px;    
+
+}
+
+.links img{
+   width:100% ; 
+  
+}
+
+.second h2{
+    color: rgb(4, 4, 4);
+    margin-bottom: 20px;
+}
+
+.second{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.second nav a{
+    
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    display: block;
+    
+}
+
+.second input{
+    background-color: rgb(44, 212, 61);
+    display: block;
+}
+
+.second button{
+    background-color: rgb(41, 29, 214);
+    display: block;
+    margin-top: 5px;
+    margin:10px auto;
+    border-radius: 15%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.second input:hover{
+    background-color: rgb(12, 78, 233);
+    
+    
+}
+
+
+.second button:hover{
+    background-color: aqua;
+}
+
+.logo{
+    animation-name: movingLogo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-top: 180px;
+    animation-timing-function: linear;
+    width: fit-content;
+    /* background-color: yellowgreen; */
+    margin-top: 70px;
+
+
+}
+
+.logo img{
+    /* background-color: red; */
+    border-radius: 15%;
+}
+
+@keyframes movingLogo{
+    0%{margin-left: 50px;}
+    0%{transform: rotateZ(15deg);}
+    10%{margin-left: 250px;}
+    20%{margin-left: 400px;}
+    30%{margin-left: 650px;}
+    40%{margin-left: 850px;}
+    50%{margin-left: 1100px;}
+    50%{transform: rotateZ(-15deg);}
+    60%{margin-left: 850px;}
+    70%{margin-left: 650px;}
+    80%{margin-left: 400px;}
+    90%{margin-left: 250px;}
+    100%{margin-left: 50px;}
+    100%{transform: rotateZ(15deg);}
+    
+}
+
+.subscribeDiv button{
+    
+   /* background-color: rgb(30, 73, 190); */
+}
+
+.subscribeDiv h2{
+    text-align: center;
+}
+
+.second{
+    padding: 20px;
+}
+
+/*services*/
+.servicesDiv{
+    /* display: grid; */
+    display: flex; 
+    /* grid-template-columns: auto auto auto; */
+    margin:150px auto;
+    justify-content: space-between; 
+    gap: 20px;
+    width: 90%;
+}
+
+.servicesDiv div{
+    /* width: fit-content; */
+    margin: 30px auto;
+    width: 30%;
+}
+
+.servicesDiv h1{
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.servicesDiv div img{
+    width: 100%;
+    border-radius: 15%;
+    border: solid 3px goldenrod;
+    height: 100%;
+}
+
+.servicesDiv div p{
+    font-family: angkest;
+    font-size: 25px;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/*our team=informational*/
+
+.OurTeamDiv{
+     /* display: grid; */
+     display: flex;
+     /* grid-template-columns: auto auto auto; */
+     margin:150px auto;
+     justify-content: center;
+     gap: 20px;
+}
+
+.OurTeamDiv h1{
+    background-color: yellowgreen;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+/* .OurTeamDiv div img{
+    width: 400px;
+    border-radius: 15%;
+    border: solid 3px goldenrod;
+    height: 300px;
+} */
+
+.OurTeamDiv div p{
+    font-family: angkest;
+    font-size: 25px;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.mrgvaliPotostvis{
+    height: 220px;
+    width: 200px;
+    /* height: 110px;
+    width: 110px; 
+    es responsivisaa*/
+    border-radius: 30px;
+    overflow: hidden;
+    border: 6px solid goldenrod;
+    margin-bottom: 10px;
+}
+
+.mrgvaliPotostvis img{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 0%; */
+    filter:brightness(50%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+.mrgvaliPotostvis img:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+}    
+
+/* buy gilaki*/
+
+#buyTour{
+   padding: 10px;
+   background-color: yellowgreen;
+   border-radius: 8px;
+   font-family: angkest;
+   font-weight: bold;
+   
+}
+
+#buyTour:hover{
+    transform: scale(1.2);
+    background-color: limegreen;
+    color: rgb(226, 0, 226);
+    cursor: pointer;
+}
+
+.buyTourDiv{
+    display: flex;
+    justify-content: center;
+    margin:20px auto
+}
+
+/*login*/
+.logIn{
+    border: 3px solid rgb(238, 238, 238);
+    width: 200px;
+    padding: 30px;
+    border-radius: 5%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(140, 189, 245) 21%);
+}
+
+.containerForLogInDiv{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logIn div a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#logInItemInside{
+    padding: 5px;
+    
+}
+
+#logInItemInside:focus{
+    color: rgb(161, 6, 6);
+    background-color: rgb(72, 150, 239);
+}
+
+
+#logInItem{
+    padding: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+}
+
+#btn1{
+    width: 170px;
+    background-color:   yellowgreen;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* #btn1:hover{
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+} */
+
+#btn1:active{
+    background-color: rgb(36, 230, 36);
+    color: white;  
+}
+
+#btn2{
+    width: 120px;
+    font-size: 10px;
+    background-color: rgb(36, 230, 36);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+#btn2:hover{
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+    background-color:white;
+    color: rgb(36, 230, 36);
+    
+}
+
+
+#btn2:active{
+    background-color:rgb(245, 243, 102);
+    color: rgb(26, 75, 220);    
+}
+
+.fullPage{
+    display:block;
+    margin-top: 200px;
+    
+}
+
+.facebookSloganContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.facebookSlogan{
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.facebookSlogan h1{
+    margin-bottom: 10px;
+}
+
+.facebookSlogan h1{
+    background-color:  yellowgreen;
+    color: rgb(249, 250, 249);
+    text-align: center;
+}
+
+.facebookSlogan h1:hover{
+    background-color: rgb(249, 250, 249);
+    color: rgb(26, 75, 220);
+    border: 3px solid rgb(26, 75, 220);
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.links a{
+    padding: 2px;
+    text-decoration: none;
+}
+
+#SuccessfullyBooked{
+    text-align: center;
+    background-color: yellowgreen;
+    width: 700px;
+    margin:200px auto;
+    font-size: 40px;
+    border-radius: 15%;
+}
+
+#backToHome{
+    color: yellowgreen;
+}
+
+.backToHomeDiv{
+    background-color: red;
+    width: 200px;
+    font-size: 30px;
+    border-radius: 15%;
+    margin:-100px auto;
+    text-align: center;
+    
+}
+
