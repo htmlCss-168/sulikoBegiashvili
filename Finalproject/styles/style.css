@@ -6,10 +6,13 @@
 }
 
 body{
-    background: rgb(74, 135, 234); 
+    /* background: rgb(181, 197, 221);  */
+    background-image: url(/photos/kopalbackground.jpg);
+
+
     /* background-image: url(/photos/background\ sky.png); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    background-repeat: no-repeat;   
+    background-size:100%; 
    /* background: linear-gradient(90deg, rgba(119,160,224,1) 23%, rgba(211,221,83,1) 100%);*/
 } 
 
@@ -251,7 +254,7 @@ header nav a:hover{
     .firstflipcardfront img {
         width: 100%;
         height: 200px;
-        border: 10px solid gold;
+        border: 5px solid gold;
         border-radius: 15%;
     }
 
