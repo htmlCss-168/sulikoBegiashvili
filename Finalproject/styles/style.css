@@ -11,7 +11,7 @@ body{
 
 
     /* background-image: url(/photos/background\ sky.png); */
-    background-repeat: no-repeat;   
+    sbackground-repeat: no-repeat;   
     background-size:100%; 
    /* background: linear-gradient(90deg, rgba(119,160,224,1) 23%, rgba(211,221,83,1) 100%);*/
 } 
