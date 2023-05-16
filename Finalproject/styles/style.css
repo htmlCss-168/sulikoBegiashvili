@@ -6,78 +6,17 @@
 }
 
 body{
-    /* background: rgb(181, 197, 221);  */
-    background-image: url(/photos/kopalbackground.jpg);
-
-
-    /* background-image: url(/photos/background\ sky.png); */
-    sbackground-repeat: no-repeat;   
-    background-size:100%; 
-   /* background: linear-gradient(90deg, rgba(119,160,224,1) 23%, rgba(211,221,83,1) 100%);*/
+    background-image: url(../photos/kopalbackground.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
 } 
 
 .active{
-    color: rgb(0, 34, 253);
-    background-color: rgb(205, 50, 156);
+    color: rgb(226, 30, 53);
+    background-color: rgb(4, 114, 216);
     border-radius: 15px;
     padding: 8px;
 }
-
-/* es apisgan nav ul {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(184, 206, 85 );
-    border-radius: 50px;
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  
-  nav li {
-    margin-right: 20px;
-    padding: 15px;
-  }
-
-  header nav {
-    width: 70%;
-    margin: 20px auto;
-  }
-
-  header nav a{
-    color: rgb(32, 12, 12);
-    
-}
-
-header nav a:hover{
-    color: rgb(38, 67, 250);
-    background-color: rgb(205, 50, 50);
-    border-radius: 15px;
-    padding: 8px;
-}
-  
-  /* Styles for tablets */
-  /* @media (max-width: 768px) {
-    nav ul {
-      flex-direction:row;
-      font-size: 15px;
-    }
-  
-    nav li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-  
-  /* Styles for mobile devices */
-  /* @media (max-width: 480px) {
-    nav ul {
-      text-align: center;
-      font-size: 3px;
-    }
-  
-    nav li {
-      margin-right: 1px;
-    }
-  }  */
 
 header nav{
     width: 70%;
@@ -104,167 +43,81 @@ header nav a{
 }
 
 header nav a:hover{
-    color: rgb(38, 67, 250);
-    background-color: rgb(205, 50, 50);
+    color: rgb(226, 30, 53);
+    background-color: rgb(53, 205, 50);
     border-radius: 15px;
     padding: 8px;
 } 
 
-/* .slider{
-    display: flex;
-    gap: 100px;
+.kitxva{
+    margin: 50px auto;
+    width: 70%;
+    font-family: angkest;
+    font-weight: bold;
 }
-
-.slider div{
+.mostquestions{
+    justify-content: space-between;
+    -webkit-line-clamp: 3;
+    row-gap: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    }
+    
+/*es responsivze shecvale*/
+.questions{
+    /* width: 548px; */
+    margin: 0 auto;
     width: 300px;
-    height: 300px;        
-}  */
+    height: 225px; 
+}
 
-/* .slider div img{
+.questiononeanswer{
+    background-color: #0dbe36;
+    padding: 10px;
+    border-radius: 15%;  
+} 
+
+.firstflipcardinner {
+    position: relative; 
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+    background-color: #DEA7B6;
+}
+
+.questions:hover .firstflipcardinner {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+      
+.firstflipcardfront, .firstflipcardback {
+    position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 15%;
-} */
-
-
-
-/* .slide-wrapper img{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: rgb(12, 173, 71);
+}
+      
+.firstflipcardfront {
+    background-color: #0dbe36;
+    color: black;    
+}
+    
+.firstflipcardfront img {
     width: 100%;
-    height: 100%;
+    height: 200px;
+    border: 5px solid gold;
     border-radius: 15%;
-    
-}
-    
-#slideshow {
-    overflow: hidden;
-    height: 510px;
-    width: 728px;
-    margin:80px auto;
-}
-     
-     
-.slide {
-    float: left;
-    height: 510px;
-    width: 728px;
-}
-     
-         
-.slide-wrapper {
-    width: calc(728px * 5);
-    animation: slide-wrapper 10s ease infinite;
 }
 
-@keyframes slide-wrapper {
 
-
-    0% {
-        margin-left: 0;
-    }
-        
-    20% {
-        margin-left: calc(-728px * 1);
-    }
-        
-    40% {
-        margin-left: calc(-728px * 2);
-    }
-        
-    60% {
-        margin-left: calc(-728px * 3);
-    }
-        
-    80% {
-        margin-left: calc(-728px * 4);
-    }
-        
-    100% {
-        margin-left: calc(0);
-    }
-     
-     } */
-
-     .kitxva{
-       margin: 50px auto;
-        /* width: 1800px; */
-        /* width: 950px; */
-        width: 70%;
-        /* background-color: yellowgreen; */
-        font-family: angkest;
-        font-weight: bold;
-    }
-    .mostquestions{
-        /* margin-top: 50px; */
-        /* display: flex; */
-        justify-content: space-between;
-        -webkit-line-clamp: 3;
-        /* gap: 100px; */
-        /* overflow: hidden; */
-        row-gap: 120px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
-    }
-    /*es responsivze shecvale*/
-    .questions{
-        /* width: 548px; */
-        margin: 0 auto;
-        width: 300px;
-        height: 225px; 
-        /* background-color: transparent; es rames aketebs ? */
-    }
-
-    
-      
-    .questiononeanswer{
-      background-color: #0dbe36;
-      padding: 10px;
-      border-radius: 15%;  
-    } 
-    .firstflipcardinner {
-        position: relative; /*esec ras aketebs ver mivxvdi*/
-        width: 100%;
-        /* height: 100%; */
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /*esec ver mivxvdi*/
-        background-color: #DEA7B6;
-    }
-    .questions:hover .firstflipcardinner {
-      transform: rotateY(-180deg);
-      cursor: pointer;
-    }
-      
-    .firstflipcardfront, .firstflipcardback {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /*esec ver mivxvdi*/
-        backface-visibility: hidden;
-        background-color: rgb(12, 173, 71);
-    }
-      
-    .firstflipcardfront {
-        background-color: #0dbe36;
-        color: black;
-        
-    }
-    
-    .firstflipcardfront img {
-        width: 100%;
-        height: 200px;
-        border: 5px solid gold;
-        border-radius: 15%;
-    }
-
-
-
-    .firstflipcardback {
-        background-color: #DEA7B6;
-        transform: rotateY(-180deg);
-        
-    }
+.firstflipcardback {
+    background-color: #DEA7B6;
+    transform: rotateY(-180deg);
+}
      
 @font-face {
     font-family: military;
@@ -317,7 +170,7 @@ header nav a:hover{
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    width: 900px;
+    width: 980px;
     color: rgb(10, 82, 137);
     
 }
@@ -363,7 +216,7 @@ header nav a:hover{
     height: auto;
     text-align: center;
     font-size: 30px;
-    background-color:yellowgreen;
+    background-color:rgb(184, 206, 85);
     border-radius: 20%;
     padding: 20px;
     font-family: angkest;
@@ -463,7 +316,7 @@ table tr :hover{
 
 .contactArticle{
     text-align: center;
-    background-color: yellowgreen;
+    background-color:rgb(184, 206, 85);
     width: 65%;
     margin:200px auto;
     padding: 20px;
@@ -484,7 +337,7 @@ table tr :hover{
 }
 
 footer{
-    background-color: rgb(221, 192, 28);
+    background-color: rgb(184, 206, 85);
     margin-top: 100px;
     /* padding-top: 100px; */
     
@@ -527,18 +380,15 @@ footer{
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 
 
 .second nav a{
-    
     text-decoration: none;
     color: rgb(5, 5, 5);
-    display: block;
-    
+    display: block;  
 }
 
 .second input{
@@ -557,9 +407,7 @@ footer{
 }
 
 .second input:hover{
-    background-color: rgb(12, 78, 233);
-    
-    
+    background-color: rgb(12, 78, 233);  
 }
 
 
@@ -571,18 +419,18 @@ footer{
     animation-name: movingLogo;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    margin-top: 180px;
+    
     animation-timing-function: linear;
     width: fit-content;
     /* background-color: yellowgreen; */
-    margin-top: 70px;
-
-
+    margin-top: 120px;
+    margin-bottom: -100px;
 }
 
 .logo img{
     /* background-color: red; */
     border-radius: 15%;
+    width: 350px;
 }
 
 @keyframes movingLogo{
@@ -630,27 +478,28 @@ footer{
 .servicesDiv div{
     /* width: fit-content; */
     margin: 30px auto;
-    width: 30%;
+    width: 100%;
 }
 
 .servicesDiv h1{
-    background-color: yellowgreen;
+    background-color: rgb(184, 206, 85); 
     margin-bottom: 10px;
     border-radius: 25px;
+    color: tomato;
 }
 
 .servicesDiv div img{
     width: 100%;
     border-radius: 15%;
     border: solid 3px goldenrod;
-    height: 100%;
+    
 }
 
 .servicesDiv div p{
     font-family: angkest;
     font-size: 25px;
     text-align: center;
-    background-color: yellowgreen;
+    background-color:rgb(184, 206, 85);
     border-radius: 25px;
     font-weight: bold;
 }
@@ -667,9 +516,10 @@ footer{
 }
 
 .OurTeamDiv h1{
-    background-color: yellowgreen;
+    background-color:rgb(184, 206, 85);
     margin-bottom: 10px;
     border-radius: 25px;
+    color: tomato;
 }
 
 /* .OurTeamDiv div img{
@@ -683,7 +533,7 @@ footer{
     font-family: angkest;
     font-size: 25px;
     text-align: center;
-    background-color: yellowgreen;
+    background-color:rgb(184, 206, 85);
     border-radius: 25px;
     font-weight: bold;
 }
@@ -787,12 +637,6 @@ footer{
     text-align: center;
     font-size: 15px;
 }
-
-/* #btn1:hover{
-    font-size: 15px;
-    width: 200px;
-    height: 30px;
-} */
 
 #btn1:active{
     background-color: rgb(36, 230, 36);
@@ -944,3 +788,148 @@ footer{
         width: 30%;
     }
 } */
+
+/* @media only screen and (max-width: 1200px) */
+
+@media only screen and (max-width: 768px) {
+    header nav ul {font-size: 13px;}
+    
+    .kitxva img {width: 150px;}
+    
+    .kitxva {
+        margin:0px auto;
+        width: -40%;
+    }
+    
+    .mostquestions{
+        display: block;
+
+    }
+
+    .questions {
+        width: 548px;
+        margin-bottom: 10px;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    @keyframes movingLogo{
+        0%{margin-left: 10px;}
+        0%{transform: rotateZ(15deg);}
+        10%{margin-left: 100px;}
+        20%{margin-left: 200px;}
+        30%{margin-left: 350px;}
+        40%{margin-left: 550px;}
+        50%{margin-left: 580px;}
+        50%{transform: rotateZ(-15deg);}
+        60%{margin-left: 550px;}
+        70%{margin-left: 350px;}
+        80%{margin-left: 200px;}
+        90%{margin-left: 100px;}
+        100%{margin-left: 10px;}
+        100%{transform: rotateZ(15deg);}
+        
+    }
+    
+    footer {
+        font-size: small;
+    }
+
+    .sectionDiv section{
+        font-size: 10px;
+        width: 300px; 
+        height: 150px;
+    }
+
+    .sectionDiv h1{
+        font-size: 20px;
+    }
+
+    #upcomingTours{
+        font-size: 20px;
+    }
+
+    .upcomingToursSection{
+        height: 60px;
+    }
+
+    #aboutArticle{
+        font-size: 15px;
+        margin-top: 60px;
+    }
+
+    .contactArticle{
+        font-size: 13px;
+    }
+
+    .contactArticle h1{
+        font-size: 20px;
+    }
+
+    .OurTeamDiv{
+        display: block;
+        margin: auto;
+    }
+
+    .OurTeamDiv h1{
+        font-size: 20px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .OurTeamDiv div{
+        margin:20px auto ;
+    }
+    
+    .OurTeamDiv div p{
+        font-size: 20px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .mrgvaliPotostvis{
+        margin: auto;
+        width: 150px;
+        height: 150px;
+    }
+
+    .servicesDiv{
+        display:block;
+        margin: auto;
+    }
+
+    .servicesDiv h1{
+        font-size: 20px;
+        margin: auto;
+        width: 200px;
+    }
+
+    .servicesDiv div{
+        display: flex;
+        margin:20px auto ;
+        gap: 20px;
+    }
+    
+    .servicesDiv div p{
+        font-size: 15px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .servicesDiv div img{
+        margin: auto;
+
+    }
+
+}
+
+ /* @media only screen and (max-width: 480px) {
+    header nav ul {font-size: 2px;}
+    header nav ul li a{color: yellowgreen;}
+ } */
