@@ -279,7 +279,7 @@ header nav a:hover{
          
 .slide-wrapper {
     width: calc(728px 4);
-    animation: slide 15s linear infinite;
+    animation: slide 20s linear infinite;
 }
 
 @keyframes slide {
