@@ -150,10 +150,19 @@ header nav a:hover{
 
 .sectionDiv section:hover{
     transform: scale(1.1);
+    background-color: tomato;
+    padding: 30px;
 }
+
 .sectionDiv section p{
     color: rgb(6, 7, 9);
     font-weight: bolder;
+}
+
+.sectionDiv section p:hover{
+    color:#0dbe36;
+    font-size: 25px;
+    
 }
 
 .sectionDiv section #title{
@@ -229,6 +238,10 @@ header nav a:hover{
     font-family: angkest;
     width: 65%;
     margin: 0 auto;
+}
+
+#aboutArticle:hover{
+    text-decoration: underline;
 }
 
 #aboutArticle span{
@@ -407,15 +420,21 @@ table tr :hover{
 
 .contactDivNew h3{
     background-color: rgba(236, 243, 11, 0.906);
-    width: 50%;
+    width: 55%;
     margin:50px auto;
     border-radius: 25px;
     text-align: center;
     color: #000000;
-    font-family: military;
+    font-family:monospace;
     font-size: 22px;
     cursor: pointer;
-    
+    padding: 5px;
+}
+
+.contactDivNew h3:hover{
+    background-color: tomato;
+    color:yellowgreen;
+    padding: 10px;
 }
 
 .contactDivNew img{
@@ -464,6 +483,22 @@ footer{
     position: relative;
     /* padding-top: 100px; */
     
+}
+
+footer .second nav a:hover{
+    background-color: #0dbe36;
+    color: darkred;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+footer .second h2:hover{
+    background-color: #0dbe36;
+    color: darkmagenta;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 2px;
 }
 
 .first{
@@ -613,6 +648,11 @@ footer{
     color: tomato;
 }
 
+.servicesDiv h1:hover{
+    background-color:rgb(85, 123, 206);
+}
+
+
 .servicesDiv div img{
     width: 100%;
     border-radius: 15%;
@@ -628,6 +668,11 @@ footer{
     border-radius: 25px;
     font-weight: bold;
 }
+
+.servicesDiv p:hover{
+    background-color:rgb(85, 123, 206);
+}
+
 
 /*our team=informational*/
 
@@ -647,6 +692,10 @@ footer{
     color: tomato;
 }
 
+.OurTeamDiv h1:hover{
+    background-color:rgb(85, 123, 206);
+}
+
 /* .OurTeamDiv div img{
     width: 400px;
     border-radius: 15%;
@@ -661,6 +710,10 @@ footer{
     background-color:rgb(184, 206, 85);
     border-radius: 25px;
     font-weight: bold;
+}
+
+.OurTeamDiv p:hover{
+    background-color:rgb(85, 123, 206);
 }
 
 .mrgvaliPotostvis{
@@ -974,6 +1027,14 @@ footer{
         font-size: 10px;
         width: 300px; 
         height: 150px;
+    }
+
+    .sectionDiv section:hover{
+        transform: scale(0.8);  
+    }
+
+    .sectionDiv section p:hover{
+        font-size: 10px;
     }
 
     .sectionDiv h1{
